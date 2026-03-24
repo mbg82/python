@@ -26,3 +26,6 @@ print(snack)
 print('-'*10)
 print('NadoCoding')
 print('-'*10)
+
+print('Program number',3)
+print('Program number',3,45,'1412watwet')
