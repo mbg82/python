@@ -19,3 +19,29 @@
 # print(person.keys())
 # print(person.values())
 # print(person.items())
+
+# my_list=['오예스','몽쉘','초코파이','초코파이','초코파이']
+# # my_set=set(my_list)
+# # my_list=list(my_set)
+# # print(my_list)
+# my_dic=dict.fromkeys(my_list)
+# print(my_dic)
+# my_list=list(my_dic)
+# print(my_list)
+
+# today='화요일'
+# if today=='일요일':
+#     print('게임 한 판')
+# else:
+#     print('폰 5분만')
+# print('공부 시작')
+
+today='수요일'
+
+if today=='일요일':
+    print('게임 한 판')
+elif today=='토요일':
+    print('폰 5분만')
+else:
+    print('물 한 잔')
+print('공부 시작')
