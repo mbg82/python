@@ -13,8 +13,11 @@
 
 
 #b2439
-m=int(input())
+# m=int(input())
+# for i in range(1,m+1):
+#     print(' '*(m-i)+'*'*(i))
 
-for i in range(1,m+1):
-    
-    print(' '*(m-1)+'*'*i)
+#b2440
+m=int(input())
+for i in range(m,0,-1):
+    print('*'*i+' '*(m-i))
