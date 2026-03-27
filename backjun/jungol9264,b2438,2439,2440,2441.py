@@ -18,6 +18,13 @@
 #     print(' '*(m-i)+'*'*(i))
 
 #b2440
-m=int(input())
-for i in range(m,0,-1):
-    print('*'*i+' '*(m-i))
+# m=int(input())
+# for i in range(m,0,-1):
+#     print('*'*i)
+
+#b2441
+# m=int(input())
+# for i in range(m,0,-1):
+#     print(' '*(m-i)+'*'*i)
+
+
