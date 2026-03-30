@@ -1,0 +1,6 @@
+f=open('list.txt','a',encoding='utf-8')
+f.write('김XX\n')
+f.write('정XX\n')
+f.write('허XX\n')
+f.write('나XX\n')
+f.close()
