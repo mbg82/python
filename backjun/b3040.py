@@ -1,3 +1,5 @@
+#브루트포스 알고리즘(무차별 대입)
+
 nums=[]
 
 for _ in range(9):
@@ -9,11 +11,11 @@ for i in range(9):
     for j in range(i+1,9):
         if total-nums[i]-nums[j]==100:
 
-             result=[]
-             for k in range(9):
-                 if k!=i and k!=j:
-                     result.append(nums[k])
+            result=[]
+            for k in range(9):
+                if k!=i and k!=j:
+                    result.append(nums[k])
 
-             result.sort()
-             for r in result:
-                 print(r)
+            result.sort()
+            for r in result:
+                print(r)
