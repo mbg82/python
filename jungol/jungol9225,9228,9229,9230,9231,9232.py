@@ -8,12 +8,12 @@
 #     print('ODD')
 
 #9228
-# score=int(input())
+score=int(input())
 
-# if score>=60:
-#     print('PASS')
-# else:
-#     print('FAIL')
+if score>=60:
+    print('PASS')
+else:
+    print('FAIL')
 
 #9229
 # age=int(input())
@@ -46,15 +46,15 @@
 #     print('F')
 
 #9232
-weight=float(input())
+# weight=float(input())
 
-if weight<=50.80:
-    print('Flyweight')
-elif weight<=61.23:
-    print('Lightweight')
-elif weight<=72.57:
-    print('Middleweight')
-elif weight<=88.45:
-    print('Cruiserweight')
-else:
-    print('Heavyweight')
+# if weight<=50.80:
+#     print('Flyweight')
+# elif weight<=61.23:
+#     print('Lightweight')
+# elif weight<=72.57:
+#     print('Middleweight')
+# elif weight<=88.45:
+#     print('Cruiserweight')
+# else:
+#     print('Heavyweight')
