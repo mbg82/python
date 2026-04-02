@@ -45,21 +45,21 @@
 # print('True' if b<c else 'False')
 
 #9211
-x,y = map(int,input().split())
+# x,y = map(int,input().split())
 
-if x>y:
-    print(f'{x} > {y} == True')
-else:
-    print(f'{x} > {y} == False')
-if x>=y:
-    print(f'{x} >= {y} == True')
-else:
-    print(f'{x} >= {y} == False')
-if x<y:
-    print(f'{x} < {y} == True')
-else:
-    print(f'{x} < {y} == False')
-if x<=y:
-    print(f'{x} <= {y} == True')
-else:
-    print(f'{x} <= {y} == False')
+# if x>y:
+#     print(f'{x} > {y} == True')
+# else:
+#     print(f'{x} > {y} == False')
+# if x>=y:
+#     print(f'{x} >= {y} == True')
+# else:
+#     print(f'{x} >= {y} == False')
+# if x<y:
+#     print(f'{x} < {y} == True')
+# else:
+#     print(f'{x} < {y} == False')
+# if x<=y:
+#     print(f'{x} <= {y} == True')
+# else:
+#     print(f'{x} <= {y} == False')

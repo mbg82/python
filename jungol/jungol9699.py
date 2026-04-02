@@ -1,20 +1,49 @@
+# class SoccerTeam:
+#     def __init__(self, name, wop):
+#         self.name = name
+#         self.wop = int(wop)
+#     def print_team(self):
+#         print(self.name)
+
+# team = []
+# res=[]
+
+# n,m = map(int,input().split())
+
+# for i in range(n):
+#     name,wop=input().split()
+#     j = SoccerTeam(name,wop)
+#     team.append(j)
+
+# for k in range(n):
+#     if team[k].wop >= m:
+#         team[k].print_team()
+
+# for x in range(len(res)-1,-1,-1):
+#     print(res[x])
+
 class SoccerTeam:
-    def __init__(self, name, wop):
+    def __init__(self, name, wp):
         self.name = name
-        self.wop = int(wop)
-    def print_team(self):
-        print(self.name)
+        self.wp = wp
+    def print_info(self):
+        print(self.name, self.wp)
 
-team = []
+N, M = map(int, input().split())
+lst = []
+res = []
+for i in range(N):
+    team_name, wp = input().split()
+    # print(team_name, wp)
+    lst.append(SoccerTeam(team_name, wp))
 
-n,m = map(int,input().split())
+# for j in range(len(lst)):
+#     lst[j].print_info()
 
-for i in range(n):
-    name,wop=input().split()
-    j = SoccerTeam(name,wop)
-    team.append(j)
+for k in range(len(lst)):
+    if int(lst[k].wp) >= M:
+        res.append(lst[k].name)
 
-for k in range(n):
-    if team[k].wop >= m:
-        team[k].print_team()
-
+# print(res)
+for x in range(len(res)-1, -1, -1):
+    print(res[x])
