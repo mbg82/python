@@ -18,4 +18,11 @@
 
 # print(f'Your name is {input()}')
 
-print('Your name is',input())
+# print('Your name is',input())
+
+#9176
+city=input()
+capital=input()
+# print(city,capital)
+
+print(f'Capital of {city} is {capital}')
