@@ -39,6 +39,14 @@
 # for i in range(-10,n+1):
 #     print(i,end=' ')
 
+n=int(input())
+
+m=-10
+
+while m<=n:
+    print(m,end=' ')
+    m +=1
+
 #9266
 # n=int(input())
 
@@ -58,10 +66,10 @@
 #     print(i)
 
 #9269
-n=int(input())
+# n=int(input())
 
-for i in range(n,0,-3):
-    print(i,end=' ')
+# for i in range(n,0,-3):
+#     print(i,end=' ')
 
 #9270
 n,m=map(int,input().split())
@@ -69,3 +77,4 @@ n,m=map(int,input().split())
 
 for i in range(n,m+1):
     print(i)
+
