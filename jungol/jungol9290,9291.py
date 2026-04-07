@@ -23,13 +23,10 @@
 # for i in range(20):
 #     print(n,end='')
 
-def inp():
-    n=input()
+# def inp():
+#     n=input()
 
-    for i in range(20):
-        print(n,end='')
+#     for i in range(20):
+#         print(n,end='')
 
-inp()
-
-
-
+# inp()

@@ -8,20 +8,20 @@
 #     print('ODD')
 
 #9228
-score=int(input())
+# score=int(input())
 
-if score>=60:
-    print('PASS')
-else:
-    print('FAIL')
+# if score>=60:
+#     print('PASS')
+# else:
+#     print('FAIL')
 
 #9229
-# age=int(input())
+age=int(input())
 
-# if age>=13:
-#     print('Middle School')
-# else:
-#     print('Elementary School')
+if age<13:
+    print("Elementary School")
+else:
+    print("Middle School")
 
 #9230
 # time=int(input())
