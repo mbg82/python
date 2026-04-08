@@ -27,4 +27,18 @@
 # for i in range(m,0,-1):
 #     print(' '*(m-i)+'*'*i)
 
+n=int(input())
+
+floor=1
+floor_max=1
+
+while n>floor_max:
+    floor_max+=6*floor
+    floor+=1
+
+print(floor)
+
+
+
+
 

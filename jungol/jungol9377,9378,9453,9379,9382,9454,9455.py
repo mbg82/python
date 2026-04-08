@@ -41,6 +41,16 @@
 #     reversed_str = s[i] + reversed_str
 # print(reversed_str)
 
+
+#9382
+a='apple orange banana'
+b='   Hello world!   '
+
+print(' '.join(reversed(a.split())))
+print(b)
+print(b.strip())
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 #9454
 # num1,num2=map(int,input().split())
 
@@ -56,20 +66,20 @@
 # print(f'두 수의 차 = {minus()}')
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-r1,r2=map(int,input().split())
-def calc(p1,p2):
-    sum=p1+p2
+# r1,r2=map(int,input().split())
+# def calc(p1,p2):
+#     sum=p1+p2
 
-    minus=0
-    if p1>p2:
-        minus=p1-p2
-    else:
-        minus=p2-p1
-        return[sum,minus]
+#     minus=0
+#     if p1>p2:
+#         minus=p1-p2
+#     else:
+#         minus=p2-p1
+#         return[sum,minus]
 
-r1,r2=calc(50,30)
-print(f'두 수의 합 = {calc(r1)}')
-print(f'두 수의 차 = {calc(r2)}')
+# r1,r2=calc(50,30)
+# print(f'두 수의 합 = {calc(r1)}')
+# print(f'두 수의 차 = {calc(r2)}')
 
 #9455
 # radius=int(input())
