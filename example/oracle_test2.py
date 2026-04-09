@@ -9,7 +9,7 @@ conn = oracledb.connect(user="c##mbc", password="green1234", dsn=dsn)
 # 쿼리 실행을 위한 커서 생성
 cursor = conn.cursor()
 
-def show_menu():  
+def show_menu():  # 메뉴 보여주는 함수수
     print('-- 임직원 관리 시스템 --')
     print('-     1. 직원 추가     - ')
     print('-     2. 직원 삭제     - ')
@@ -19,7 +19,7 @@ def show_menu():
     print(menu_num)
     return menu_num
 
-def insert_emp(): #empno, ename, job, mgr, hiredate, sal, comm, deptno   직원 추가 
+def insert_emp(): # 직원 추가 함수  empno, ename, job, mgr, hiredate, sal, comm, deptno   
     print('새로운 직원의 사번, 이름을 입력하세요...')
     empno, ename = input().split()
     print(empno,ename)
@@ -32,15 +32,14 @@ def insert_emp(): #empno, ename, job, mgr, hiredate, sal, comm, deptno   직원 
     except oracledb.DatabaseError as e:
         print(f"Error inserting data {e}")    
 
-def del_emp():
+def del_emp():  # 직원 삭제 함수
     print('삭제할 직원의 이름을 입력하세요...')
     ename=input()
     print(ename)
 
-
 # DELETE 예제
     try:
-        del_query="DELETE FROM emp WHERE ENAME='"+ename+"'"
+        del_query="DELETE FROM emp WHERE ENAME='"+ename.upper()+"'"
         print(del_query)
 
         cursor.execute(del_query)
@@ -51,7 +50,7 @@ def del_emp():
         print(f"Error fetching data {e}")
 
 
-def search_emp():   # 직원 조회
+def search_emp():   # 직원 조회  함수
 # SELECT 예제
     try:
         cursor.execute("SELECT * FROM emp")
@@ -60,7 +59,7 @@ def search_emp():   # 직원 조회
     except oracledb.DatabaseError as e:
         print(f"Error fetching data {e}")
 
-
+# 사용자 행동 반복문 
 loop= True
 
 while loop:
@@ -79,7 +78,6 @@ while loop:
     else:
         print('***프로그램이 종료 됩니다.***')
         loop=False
-
 
 
 # 커서 및 커넥션 닫기
