@@ -45,7 +45,7 @@ def del_emp():  # 직원 삭제 함수
         cursor.execute(del_query)
 
         conn.commit()
-        print("Data inserted successfully")
+        print("Data delete successfully")
     except oracledb.DatabaseError as e:
         print(f"Error fetching data {e}")
 
