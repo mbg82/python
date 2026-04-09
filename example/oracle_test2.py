@@ -49,7 +49,6 @@ def del_emp():  # 직원 삭제 함수
     except oracledb.DatabaseError as e:
         print(f"Error fetching data {e}")
 
-
 def search_emp():   # 직원 조회  함수
 # SELECT 예제
     try:
