@@ -1,6 +1,5 @@
-from cmath import e
-from tkinter import E
 import oracledb
+from person import Person
 
 # 데이터베이스 접속 정보 설정
 dsn = oracledb.makedsn("localhost", 1521, service_name="XE")
@@ -8,8 +7,8 @@ conn = oracledb.connect(user="c##mbc", password="green1234", dsn=dsn)
 
 # 쿼리 실행을 위한 커서 생성
 cursor = conn.cursor()
-
-def show_menu():  # 메뉴 보여주는 함수수
+        
+def show_menu():  # 메뉴 보여주는 함수
     print('-- 임직원 관리 시스템 --')
     print('-     1. 직원 추가     - ')
     print('-     2. 직원 삭제     - ')
@@ -24,13 +23,17 @@ def insert_emp(): # 직원 추가 함수  empno, ename, job, mgr, hiredate, sal,
     empno, ename = input().split()
     print(empno,ename)
 
-# INSERT 예제
-    try:
-        cursor.execute("INSERT INTO emp (empno, ename) VALUES (:1, :2)", [empno, ename.upper()])
-        conn.commit()
-        print("Data inserted successfully")
-    except oracledb.DatabaseError as e:
-        print(f"Error inserting data {e}")    
+    if empno.isdigit():  # 사업 입력 시 숫자인지 문자열지 확인하여 True일 시 INSERT, False일 시 오류 메시지 출력
+        # INSERT 예제
+        try:
+            cursor.execute("INSERT INTO emp (empno, ename) VALUES (:1, :2)", [empno, ename.upper()])
+            conn.commit()
+            print("Data inserted successfully")
+        except oracledb.DatabaseError as e:
+            print(f"Error inserting data {e}")    
+    else:
+        print('INSERT ERROR. 숫자만 입력 가능합니다.')
+    
 
 def del_emp():  # 직원 삭제 함수
     print('삭제할 직원의 이름을 입력하세요...')
@@ -39,7 +42,8 @@ def del_emp():  # 직원 삭제 함수
 
 # DELETE 예제
     try:
-        del_query="DELETE FROM emp WHERE ENAME='"+ename.upper()+"'"
+        # del_query="DELETE FROM emp WHERE ENAME='"+ename.upper()+"'"  injection 위험험
+        del_query=("DELETE FROM emp WHERE ENAME= :1",[ename.upper()])
         print(del_query)
 
         cursor.execute(del_query)
@@ -52,9 +56,27 @@ def del_emp():  # 직원 삭제 함수
 def search_emp():   # 직원 조회  함수
 # SELECT 예제
     try:
-        cursor.execute("SELECT * FROM emp")
+        cursor.execute('''
+        SELECT EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO
+        FROM emp
+        ORDER BY EMPNO''')
+        # for row in cursor:
+        #     print(row)
+        list=[]
+
         for row in cursor:
-            print(row)
+        #     #print(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7])
+            p=Person(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7])
+        #     p.print_person()
+
+            list.append(p)
+
+        for person in list:
+            person.print_person()
+        
+        return list
+
+
     except oracledb.DatabaseError as e:
         print(f"Error fetching data {e}")
 
