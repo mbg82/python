@@ -9,5 +9,11 @@ class Person:
         self.comm = comm
         self.deptno = deptno
 
+    # def print_person(self):
+    #     if self.sal is not None:
+    #         print(f"{self.empno} : {self.ename:>10} : {int(self.sal):>7}")
+    #     else:
+    #         print(f"{self.empno} : {self.ename:>10} :       0")
+    
     def print_person(self):
         print(f"{self.empno} : {self.ename} : {self.job} : {self.mgr} : {self.hiredate} : {self.sal} : {self.comm}: {self.deptno}")
