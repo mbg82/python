@@ -39,19 +39,31 @@
 # for i in range(-10,n+1):
 #     print(i,end=' ')
 
-n=int(input())
-
-m=-10
-
-while m<=n:
-    print(m,end=' ')
-    m +=1
-
-#9266
 # n=int(input())
 
-# for i in range(10,n+1,10):
-#     print(i)
+# m=-10
+
+# while m<=n:
+#     print(m,end=' ')
+#     m +=1
+
+#9266
+n=int(input())
+
+for i in range(10,n+1,10):
+    print(i)
+
+
+n=int(input())
+
+m=10
+
+while m<=n:
+    print(m)
+    m+=10
+
+
+
 
 #9267
 # n=int(input())
@@ -72,9 +84,30 @@ while m<=n:
 #     print(i,end=' ')
 
 #9270
-n,m=map(int,input().split())
+# n,m=map(int,input().split())
 
 
-for i in range(n,m+1):
-    print(i)
+# for i in range(n,m+1):
+#     print(i)
 
+#9271
+# s,e = map(int,input().split())
+
+# for i in range(s, e+1):
+#     if i % 2 == 1:  
+#         print(i)
+
+#9272
+# s=int(input())
+# e=int(input())
+
+# for i in range(s,e-1,-1):
+#     print(i,end=' ')
+
+#9273
+# n=0
+
+# while n<=10:
+#     sum=n
+#     print(n)
+#     n+=1
