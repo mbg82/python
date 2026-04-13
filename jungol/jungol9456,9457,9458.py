@@ -82,14 +82,52 @@
 # print(r)
 
 #````````````````````````````````````````````````
-def check_number(n):
-    mapping = {
-        (n > 0): 'positive',
-        (n < 0): 'negative',
-        (n == 0): 'zero'
-    }
-    return mapping[True]
+# def check_number(n):
+#     mapping = {
+#         (n > 0): 'positive',
+#         (n < 0): 'negative',
+#         (n == 0): 'zero'
+#     }
+#     return mapping[True]
 
-num = int(input())
-# print(num)
-print(check_number(num))
+# num = int(input())
+# # print(num)
+# print(check_number(num))
+
+#9459
+
+gender, age = input().split()
+# print(gender, age)
+
+def person(gender, age):
+    gender=gender.upper()
+    
+    if gender == 'M':
+        if int(age)>=20:
+            return 'MAN'
+        else:
+            return 'BOY'
+    
+    if gender == 'F':
+        if int(age)>=20:
+            return 'WOMAN'
+        else:
+            return 'GIRL'
+
+result = person(gender,age)
+print(result)
+
+#9465
+
+n=int(input())
+
+def sum():
+
+    total=0
+
+    for i in range(1,n+1):
+        total+=i
+
+        print(total)
+
+sum()
