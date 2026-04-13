@@ -16,20 +16,26 @@
 #     print('FAIL')
 
 #9229
-age=int(input())
+# age=int(input())
 
-if age<13:
-    print("Elementary School")
-else:
-    print("Middle School")
+# if age<13:
+#     print("Elementary School")
+# else:
+#     print("Middle School")
 
 #9230
-# time=int(input())
+time=int(input())
 
-# if time <12:
-#     print('AM')
-# else:
-#     print('PM')
+if time <12:
+    print('AM')
+else:
+    print('PM')
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+hour = int(input())
+# print(hour)
+is_pm = bool(hour // 12)
+print("PM" if is_pm else "AM")
 
 #9231
 # inp=int(input())
