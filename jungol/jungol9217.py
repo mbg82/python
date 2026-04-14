@@ -8,3 +8,4 @@ avg=(kor+eng+math+info)/4
 
 print(f'tot: {tot}')
 print(f'avg: {avg:.0f}')
+
