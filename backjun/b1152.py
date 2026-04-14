@@ -1,2 +1,4 @@
 
 print(len(input().split()))
+
+

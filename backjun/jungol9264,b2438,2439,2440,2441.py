@@ -27,6 +27,7 @@
 # for i in range(m,0,-1):
 #     print(' '*(m-i)+'*'*i)
 
+
 n=int(input())
 
 floor=1
