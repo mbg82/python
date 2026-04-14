@@ -48,19 +48,19 @@
 #     m +=1
 
 #9266
-n=int(input())
+# n=int(input())
 
-for i in range(10,n+1,10):
-    print(i)
+# for i in range(10,n+1,10):
+#     print(i)
 
 
-n=int(input())
+# n=int(input())
 
-m=10
+# m=10
 
-while m<=n:
-    print(m)
-    m+=10
+# while m<=n:
+#     print(m)
+#     m+=10
 
 
 
@@ -106,8 +106,31 @@ while m<=n:
 
 #9273
 # n=0
-
+# sum=0
 # while n<=10:
-#     sum=n
-#     print(n)
+#     sum+=n
 #     n+=1
+# print(sum)
+
+#9274
+
+n=int(input())
+
+i=1
+sum=0
+
+while i<=n:
+    sum +=i
+    i+=1
+
+print(sum)
+
+
+n=int(input())
+
+sum=0 
+
+for i in range(1,n+1):
+    sum += i
+    
+print(sum)
