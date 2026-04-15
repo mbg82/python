@@ -49,16 +49,12 @@
 
 
 #9295
+s,e=map(int,input().split())
 
-# s,e=map(int,input().split())
-
-# for i in range(s,e+1):
-#     print(i,end='   ')
+for i in range(s,e+1):
+    print(i,end='   ')
 
 #9296
-# from msvcrt import kbhit
-
-
 # for i in range(5,56,2):
 #     print(i,end=' ')
 
@@ -69,7 +65,6 @@
 #     print(i,end=' ')
 
 #9298
-
 # s=int(input())
 # e=int(input())
 # k=int(input())
@@ -82,7 +77,7 @@
 #     print(i,end= ' ')
 
 #9300
-s,e= map(int,input().split())
+# s,e= map(int,input().split())
 
-for i in range(s,e+1,-2):
-    print(i)
+# for i in range(s,e+1,):
+#     print(i)
