@@ -8,7 +8,6 @@
 # m=int(input())
 
 # for i in range(m):
-    
 #     print('*'*(i+1))
 
 
@@ -17,27 +16,32 @@
 # for i in range(1,m+1):
 #     print(' '*(m-i)+'*'*(i))
 
+
 #b2440
-m=int(input())
-for i in range(m,0,-1):
-    print('*'*i)
+# m=int(input())
+# for i in range(m,0,-1):
+#     print('*'*i)
 
 #b2441
 # m=int(input())
 # for i in range(m,0,-1):
 #     print(' '*(m-i)+'*'*i)
 
+#b2442
+m=int(input())
+for i in range(1,m+1):
+    print(' '*(m-i)+'*'*(i))
 
-n=int(input())
+# n=int(input())
 
-floor=1
-floor_max=1
+# floor=1
+# floor_max=1
 
-while n>floor_max:
-    floor_max+=6*floor
-    floor+=1
+# while n>floor_max:
+#     floor_max+=6*floor
+#     floor+=1
 
-print(floor)
+# print(floor)
 
 
 
