@@ -30,16 +30,50 @@
 # print(d[month])
 
 #9243
-inp= int(input())
+# inp= int(input())
 
-match inp:
-    case 1:
-        print('KOREA')
-    case 2:
-        print('USA')
-    case 3:
-        print('CHINA')
-    case _:
-        print('NO')
+# match inp:
+#     case 1:
+#         print('KOREA')
+#     case 2:
+#         print('USA')
+#     case 3:
+#         print('CHINA')
+#     case _:
+#         print('NO')
 
 #9242
+year = int(input())
+
+if (year % 4 ==0 and year % 100 !=0) or year % 400 == 0:
+    print('leap year')
+else:
+    print('common year')
+
+#9241
+# N = int(input())
+
+# if N == 0:
+#     print('ZERO')
+# elif N > 0:
+#     print('PLUS')
+# else :
+#     print('MINUS')
+
+
+
+#9240
+# inp1, inp2=map(int,input().split())
+
+# print(max(inp1,inp2)-min(inp1,inp2))
+
+#9239
+# a,b,c = map(int,input().split())
+
+# print(a if a<b and a<c else(b if b<c else c))
+
+#9238
+# a=int(input())
+# b=int(input())
+
+# print(a if a > b else b)
