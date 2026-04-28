@@ -39,28 +39,55 @@
 
 
 # 9354
-lst=[]
+# lst=[]
 
-for i in range(5):
-    lst.append(input())
+# for i in range(5):
+#     lst.append(input())
 
-print(lst)
+# print(lst)
 
 # for i in lst():
 #     print('['+', '.join(f"'{i}'" for i in lst)+']')
 #     #print('['+', '.join(i)+']')
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
-class ListCollector:
-    def __init__(self, target):
-        self.target = target
-        self.storage = []
+# class ListCollector:
+#     def __init__(self, target):
+#         self.target = target
+#         self.storage = []
 
-    def collect(self):
-        while len(self.storage) < self.target:
-            item = input()
-            self.storage.append(item)
-        return self.storage
+#     def collect(self):
+#         while len(self.storage) < self.target:
+#             item = input()
+#             self.storage.append(item)
+#         return self.storage
 
-collector = ListCollector(5)
-print(collector.collect())
+# collector = ListCollector(5)
+# print(collector.collect())
+
+
+#9357
+a = []
+
+for _ in range(5):
+    a.append(int(input()))
+
+print('[', end='')
+
+for i in range(len(a)):
+    print(a[i], end='')
+    if i != len(a)-1:
+        print(', ', end='')
+
+print(']')
+
+del a[-2:]
+
+print('[', end='')
+
+for i in range(len(a)):
+    print(a[i], end='')
+    if i != len(a)-1:
+        print(', ', end='')
+
+print(']')
