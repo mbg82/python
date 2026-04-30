@@ -137,10 +137,56 @@
 
 
 #9276
-while True:
-    score = int(input())
+# while True:
+#     score = int(input())
 
-    if 0 <= score <= 100:
-        print(f"Score: {score}")
-    else:
-        break
+#     if 0 <= score <= 100:
+#         print(f"Score: {score}")
+#     else:
+#         break
+
+#9277
+
+
+# result = []
+
+# while True:
+#     k = float(input())
+
+#     if k > 0:
+#         result.append("positive")
+#     elif k < 0:
+#         result.append("negative")
+#     else:
+#         break
+
+
+# for r in result:
+#     print(r)
+
+#9278
+# n = []
+
+# while True:
+#     k = int(input())
+
+#     if k ==1 :
+#         n.append("one")
+#     elif k == 2:
+#         n.append("two")
+#     elif k == 3:
+#         n.append("three")
+#     else:
+#         break
+
+
+# for r in n:
+#     print(r)
+
+
+#9279
+
+for i in range(1, 501):
+    if i % 3 == 0:
+        continue
+    print(i, end=' ')
